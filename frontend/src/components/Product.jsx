@@ -57,20 +57,20 @@ export default function Product(props) {
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        <Image src="https://i.imgur.com/ZL52Q2D.png" alt="Tesla Model S" />
+        <Image src={props.pic} alt="Tesla Model S" height={300} fit="contain" />
       </Card.Section>
 
       <Group position="apart" mt="md">
         <div>
-          <Text weight={500}>Tesla Model S</Text>
+          <Text weight={500}>{props.name}</Text>
           <Text size="xs" color="dimmed">
-            Free recharge at any station
+            {props.description}
           </Text>
         </div>
-        <Badge variant="outline">25% off</Badge>
+        {/* <Badge variant="outline">25% off</Badge> */}
       </Group>
 
-      <Card.Section className={classes.section} mt="md">
+      {/* <Card.Section className={classes.section} mt="md">
         <Text size="sm" color="dimmed" className={classes.label}>
           Basic configuration
         </Text>
@@ -78,21 +78,21 @@ export default function Product(props) {
         <Group spacing={8} mb={-8}>
           {features}
         </Group>
-      </Card.Section>
+      </Card.Section> */}
 
       <Card.Section className={classes.section}>
         <Group spacing={30}>
           <div>
             <Text size="xl" weight={700} sx={{ lineHeight: 1 }}>
-              $168.00
+              ${props.price}
             </Text>
-            <Text size="sm" color="dimmed" weight={500} sx={{ lineHeight: 1 }} mt={3}>
+            {/* <Text size="sm" color="dimmed" weight={500} sx={{ lineHeight: 1 }} mt={3}>
               per day
-            </Text>
+            </Text> */}
           </div>
 
           <Button radius="xl" style={{ flex: 1 }}>
-            Rent now
+            Buy Now
           </Button>
         </Group>
       </Card.Section>

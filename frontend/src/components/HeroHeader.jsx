@@ -10,7 +10,7 @@ import {
   ThemeIcon,
 } from '@mantine/core';
 import { IconCheck } from '@tabler/icons';
-// import image from './image.svg';
+import kulimg from '../assets/ecom.svg';
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -112,7 +112,7 @@ export function HeroHeader() {
               </Button>
             </Group>
           </div>
-          {/* <Image src={image.src} className={classes.image} /> */}
+          <Image src={kulimg} className={classes.image} />
         </div>
       </Container>
     </div>

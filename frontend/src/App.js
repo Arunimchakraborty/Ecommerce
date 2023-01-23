@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import {
   AppShell,
-  Navbar,
+  // Navbar,
   Header,
-  Footer,
-  Aside,
-  Text,
-  MediaQuery,
-  Burger,
+  // Footer,
+  // Aside,
+  // Text,
+  // MediaQuery,
+  // Burger,
   useMantineTheme,
 } from '@mantine/core';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -15,7 +15,7 @@ import Homepage from './pages/Homepage';
 
 export default function App() {
   const theme = useMantineTheme();
-  const [opened, setOpened] = useState(false);
+  // const [opened, setOpened] = useState(false);
   return (
     <AppShell
       styles={{
@@ -25,11 +25,11 @@ export default function App() {
       }}
       navbarOffsetBreakpoint="sm"
       asideOffsetBreakpoint="sm"
-      footer={
-        <Footer height={40} p="xs">
-          Application footer
-        </Footer>
-      }
+      // footer={
+      //   <Footer height={40} p="xs">
+      //     Application footer
+      //   </Footer>
+      // }
       header={
         <Header height={{ base: 20, md: 50 }} p="md">
           Header Not so important
